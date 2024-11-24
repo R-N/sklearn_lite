@@ -1,5 +1,6 @@
 import numbers
 import numpy as np
+xp=np
 
 def _make_indexable(iterable):
     if hasattr(iterable, "__getitem__") or hasattr(iterable, "iloc"):

@@ -66,12 +66,12 @@ os.environ.setdefault("KMP_INIT_AT_FORK", "FALSE")
 # It is necessary to do this prior to importing show_versions as the
 # later is linked to the OpenMP runtime to make it possible to introspect
 # it and importing it first would fail if the OpenMP dll cannot be found.
-from . import (  # noqa: F401 E402
-    __check_build,
-    _distributor_init,
-)
-from .base import clone  # noqa: E402
-from .utils._show_versions import show_versions  # noqa: E402
+# from . import (  # noqa: F401 E402
+#     __check_build,
+#     _distributor_init,
+# )
+# from .base import clone  # noqa: E402
+#from .utils._show_versions import show_versions  # noqa: E402
 
 _submodules = [
     "metrics",
