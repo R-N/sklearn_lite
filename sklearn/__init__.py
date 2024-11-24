@@ -74,8 +74,8 @@ os.environ.setdefault("KMP_INIT_AT_FORK", "FALSE")
 #from .utils._show_versions import show_versions  # noqa: E402
 
 _submodules = [
-    "metrics",
-    "model_selection",
+    # "metrics",
+    # "model_selection",
 ]
 
 __all__ = _submodules + [
